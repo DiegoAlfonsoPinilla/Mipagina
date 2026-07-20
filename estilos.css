@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121214; /* Fondo de la pantalla negro oscuro */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.contenedor {
+    background: #202024;       /* Fondo de la tarjeta gris oscuro */
+    padding: 30px;
+    border-radius: 12px;       /* Esquinas más redondeadas y modernas */
+    box-shadow: 0 8px 24px rgba(0,0,0,0.5); /* Sombra más intensa */
+    width: 350px;
+}
+
+h1 { 
+    text-align: center; 
+    color: #00ff87;            /* Título en color verde neón */
+    font-size: 24px;
+    text-transform: uppercase; /* Vuelve el texto a mayúsculas */
+    letter-spacing: 1px;       /* Separa un poco las letras */
+}
+
+.formulario { 
+    display: flex; 
+    gap: 10px; 
+    margin-bottom: 20px; 
+}
+
+input { 
+    flex: 1; 
+    padding: 12px; 
+    background-color: #121214; /* Fondo del input oscuro */
+    border: 2px solid #2f2f33; /* Borde sutil */
+    border-radius: 6px; 
+    color: white;              /* Color de la letra al escribir */
+    outline: none;             /* Quita el borde azul por defecto al hacer clic */
+}
+
+input:focus {
+    border-color: #00ff87;     /* El borde se ilumina neón cuando vas a escribir */
+}
+
+button { 
+    padding: 10px 20px; 
+    background: #00ff87;       /* Botón verde neón */
+    color: #121214;            /* Texto del botón oscuro para contrastar */
+    font-weight: bold;         /* Texto en negrita */
+    border: none; 
+    border-radius: 6px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; /* Hace que el cambio de color sea suave */
+}
+
+button:hover { 
+    background: #00e074;       /* El botón se oscurece un poco al pasar el mouse */
+    box-shadow: 0 0 12px rgba(0, 255, 135, 0.4); /* ¡Efecto de brillo neón! */
+}
+
+ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+li { 
+    padding: 12px; 
+    background: #2f2f33;       /* Fondo de la tarea gris claro */
+    color: #e1e1e6;            /* Texto gris claro/blanco */
+    margin-bottom: 10px; 
+    border-radius: 6px; 
+    border-left: 5px solid #00ff87; /* Borde izquierdo verde neón */
+    /* NUEVOS AJUSTES DE ALINEACIÓN */
+    display: flex;
+    justify-content: space-between; /* Empuja el texto a la izquierda y el botón a la derecha */
+    align-items: center;            /* Centra verticalmente ambos elementos */
+}
+
+/* 2. Diseñamos el nuevo botón de eliminar con la clase que creamos en JS */
+.btn-eliminar {
+    background: transparent;  /* Sin fondo por defecto */
+    color: #ff4757;           /* Color rojo pastel gamer */
+    border: 1px solid #ff4757;/* Borde delgado rojo */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* 3. Efecto interactivo al pasar el mouse sobre el botón de eliminar */
+.btn-eliminar:hover {
+    background: #ff4757;      /* El fondo se pinta de rojo */
+    color: #121214;           /* El texto se vuelve oscuro */
+    box-shadow: 0 0 8px rgba(255, 71, 87, 0.4); /* Brillo neón rojo */
+}
